@@ -1,6 +1,8 @@
 let pueblo = prompt("ingrese ciudad");
 
-let temperature = parseFloat(prompt("ingrese la temperatura en grados centigrados"));
+let temperature = parseFloat(
+  prompt("ingrese la temperatura en grados centigrados")
+);
 let precipitaciones = parseFloat(prompt("ingrese la lluvia anual en mmts."));
 
 function determinador(t, p) {
@@ -13,9 +15,9 @@ function determinador(t, p) {
   } else if ((t <= 10) & (t > 20) & (p > 500)) {
     alert("estamos en " + pueblo + " y el clima es templado y humedo");
   } else if ((t >= 20) & (p > 500)) {
-    alert("estamos en " + pueblo + " y el clima es calido y seco");
-  } else {
     alert("estamos en " + pueblo + " y el clima es calido y humedo");
+  } else {
+    alert("estamos en " + pueblo + " y el clima es calido y seco");
   }
 }
 
